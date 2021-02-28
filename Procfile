@@ -1,0 +1,1 @@
+web: gunicorn vehicleCrashAnalysis.wsgi --log-file - --timeout 120 --graceful-timeout 60

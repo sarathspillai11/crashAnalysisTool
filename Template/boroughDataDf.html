@@ -1,0 +1,706 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>collisionId</th>
+      <th>crashDate</th>
+      <th>crashTime</th>
+      <th>borough</th>
+      <th>zipCode</th>
+      <th>lattitude</th>
+      <th>longitude</th>
+      <th>location</th>
+      <th>onStreetName</th>
+      <th>crossStreetName</th>
+      <th>offStreetName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4297327</td>
+      <td>2020-03-02</td>
+      <td>08:57:00</td>
+      <td>MANHATTAN</td>
+      <td>10029</td>
+      <td>40.7893500</td>
+      <td>-73.9394000</td>
+      <td>{'latitude': '40.78935', 'longitude': '-73.9394'}</td>
+      <td></td>
+      <td>421       EAST 106 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4298141</td>
+      <td>2020-03-04</td>
+      <td>18:20:00</td>
+      <td>MANHATTAN</td>
+      <td>10019</td>
+      <td>40.7654200</td>
+      <td>-73.9838300</td>
+      <td>{'latitude': '40.76542', 'longitude': '-73.98383'}</td>
+      <td>WEST 55 STREET</td>
+      <td></td>
+      <td>8 AVENUE</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4303839</td>
+      <td>2020-03-25</td>
+      <td>13:53:00</td>
+      <td>MANHATTAN</td>
+      <td>10001</td>
+      <td>40.7504200</td>
+      <td>-73.9893100</td>
+      <td>{'latitude': '40.75042', 'longitude': '-73.98931'}</td>
+      <td></td>
+      <td>150       WEST 34 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4307372</td>
+      <td>2020-04-03</td>
+      <td>10:30:00</td>
+      <td>MANHATTAN</td>
+      <td>10011</td>
+      <td>40.7424400</td>
+      <td>-74.0011400</td>
+      <td>{'latitude': '40.74244', 'longitude': '-74.00114'}</td>
+      <td></td>
+      <td>301       WEST 18 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4295341</td>
+      <td>2020-02-29</td>
+      <td>17:30:00</td>
+      <td>MANHATTAN</td>
+      <td>10011</td>
+      <td>40.7317050</td>
+      <td>-74.0009600</td>
+      <td>{'latitude': '40.731705', 'longitude': '-74.00096'}</td>
+      <td>AVENUE OF THE AMERICAS</td>
+      <td></td>
+      <td>WEST 4 STREET</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>4310090</td>
+      <td>2020-04-22</td>
+      <td>16:06:00</td>
+      <td>MANHATTAN</td>
+      <td>10009</td>
+      <td>40.7260060</td>
+      <td>-73.9852140</td>
+      <td>{'latitude': '40.726006', 'longitude': '-73.985214'}</td>
+      <td></td>
+      <td>441       EAST 6 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>4306488</td>
+      <td>2020-03-08</td>
+      <td>19:30:00</td>
+      <td>MANHATTAN</td>
+      <td>10029</td>
+      <td>40.7916200</td>
+      <td>-73.9488500</td>
+      <td>{'latitude': '40.79162', 'longitude': '-73.94885'}</td>
+      <td>PARK AVENUE</td>
+      <td></td>
+      <td>EAST 104 STREET</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>4300842</td>
+      <td>2020-03-13</td>
+      <td>06:30:00</td>
+      <td>MANHATTAN</td>
+      <td>10021</td>
+      <td>40.7720500</td>
+      <td>-73.9580800</td>
+      <td>{'latitude': '40.77205', 'longitude': '-73.95808'}</td>
+      <td></td>
+      <td>220       EAST 76 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>4300932</td>
+      <td>2020-03-15</td>
+      <td>15:32:00</td>
+      <td>MANHATTAN</td>
+      <td>10027</td>
+      <td>40.8097270</td>
+      <td>-73.9530400</td>
+      <td>{'latitude': '40.809727', 'longitude': '-73.95304'}</td>
+      <td></td>
+      <td>270       SAINT NICHOLAS AVENUE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>4303744</td>
+      <td>2020-03-25</td>
+      <td>08:30:00</td>
+      <td>MANHATTAN</td>
+      <td>10007</td>
+      <td>40.7129860</td>
+      <td>-74.0086900</td>
+      <td>{'latitude': '40.712986', 'longitude': '-74.00869'}</td>
+      <td></td>
+      <td>30        PARK PLACE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>4303277</td>
+      <td>2020-03-21</td>
+      <td>12:05:00</td>
+      <td>MANHATTAN</td>
+      <td>10032</td>
+      <td>40.8410760</td>
+      <td>-73.9397700</td>
+      <td>{'latitude': '40.841076', 'longitude': '-73.93977'}</td>
+      <td>BROADWAY</td>
+      <td></td>
+      <td>WEST 168 STREET</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>4303403</td>
+      <td>2020-03-23</td>
+      <td>19:21:00</td>
+      <td>MANHATTAN</td>
+      <td>10022</td>
+      <td>40.7586330</td>
+      <td>-73.9657900</td>
+      <td>{'latitude': '40.758633', 'longitude': '-73.96579'}</td>
+      <td>2 AVENUE</td>
+      <td></td>
+      <td>EAST 56 STREET</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>4298800</td>
+      <td>2020-03-11</td>
+      <td>07:10:00</td>
+      <td>MANHATTAN</td>
+      <td>10016</td>
+      <td>40.7412720</td>
+      <td>-73.9753500</td>
+      <td>{'latitude': '40.741272', 'longitude': '-73.97535'}</td>
+      <td>EAST 30 STREET</td>
+      <td></td>
+      <td>1 AVENUE</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>4297556</td>
+      <td>2020-03-04</td>
+      <td>22:20:00</td>
+      <td>MANHATTAN</td>
+      <td>10017</td>
+      <td>40.7498250</td>
+      <td>-73.9722060</td>
+      <td>{'latitude': '40.749825', 'longitude': '-73.972206'}</td>
+      <td>2 AVENUE</td>
+      <td></td>
+      <td>EAST 42 STREET</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>4298795</td>
+      <td>2020-03-11</td>
+      <td>10:00:00</td>
+      <td>MANHATTAN</td>
+      <td>10036</td>
+      <td>40.7608220</td>
+      <td>-73.9983200</td>
+      <td>{'latitude': '40.760822', 'longitude': '-73.99832'}</td>
+      <td>WEST 42 STREET</td>
+      <td></td>
+      <td>11 AVENUE</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>4300418</td>
+      <td>2020-03-12</td>
+      <td>22:14:00</td>
+      <td>MANHATTAN</td>
+      <td>10026</td>
+      <td>40.8011550</td>
+      <td>-73.9596560</td>
+      <td>{'latitude': '40.801155', 'longitude': '-73.959656'}</td>
+      <td>WEST 110 STREET</td>
+      <td></td>
+      <td>MANHATTAN AVENUE</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>4306592</td>
+      <td>2020-03-09</td>
+      <td>12:14:00</td>
+      <td>MANHATTAN</td>
+      <td>10016</td>
+      <td>40.7515220</td>
+      <td>-73.9802300</td>
+      <td>{'latitude': '40.751522', 'longitude': '-73.98023'}</td>
+      <td>EAST 40 STREET</td>
+      <td></td>
+      <td>MADISON AVENUE</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>4309238</td>
+      <td>2020-04-17</td>
+      <td>15:00:00</td>
+      <td>MANHATTAN</td>
+      <td>10035</td>
+      <td>40.8030700</td>
+      <td>-73.9383800</td>
+      <td>{'latitude': '40.80307', 'longitude': '-73.93838'}</td>
+      <td>LEXINGTON AVENUE</td>
+      <td></td>
+      <td>EAST 123 STREET</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>4310062</td>
+      <td>2020-04-22</td>
+      <td>10:40:00</td>
+      <td>MANHATTAN</td>
+      <td>10035</td>
+      <td>40.8050580</td>
+      <td>-73.9390400</td>
+      <td>{'latitude': '40.805058', 'longitude': '-73.93904'}</td>
+      <td>EAST 125 STREET</td>
+      <td></td>
+      <td>PARK AVENUE</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>4301358</td>
+      <td>2020-03-16</td>
+      <td>16:10:00</td>
+      <td>MANHATTAN</td>
+      <td>10038</td>
+      <td>40.7127230</td>
+      <td>-73.9980000</td>
+      <td>{'latitude': '40.712723', 'longitude': '-73.998'}</td>
+      <td>HENRY STREET</td>
+      <td></td>
+      <td>OLIVER STREET</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>4300608</td>
+      <td>2020-03-15</td>
+      <td>14:10:00</td>
+      <td>MANHATTAN</td>
+      <td>10033</td>
+      <td>40.8451700</td>
+      <td>-73.9338400</td>
+      <td>{'latitude': '40.84517', 'longitude': '-73.93384'}</td>
+      <td></td>
+      <td>517       WEST 176 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>4301448</td>
+      <td>2020-03-16</td>
+      <td>02:30:00</td>
+      <td>MANHATTAN</td>
+      <td>10035</td>
+      <td>40.8046760</td>
+      <td>-73.9322300</td>
+      <td>{'latitude': '40.804676', 'longitude': '-73.93223'}</td>
+      <td>EAST 128 STREET</td>
+      <td></td>
+      <td>2 AVENUE</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>4303507</td>
+      <td>2020-03-23</td>
+      <td>17:30:00</td>
+      <td>MANHATTAN</td>
+      <td>10019</td>
+      <td>40.7602900</td>
+      <td>-73.9774600</td>
+      <td>{'latitude': '40.76029', 'longitude': '-73.97746'}</td>
+      <td></td>
+      <td>31        WEST 52 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>4296222</td>
+      <td>2020-03-02</td>
+      <td>09:49:00</td>
+      <td>MANHATTAN</td>
+      <td>10128</td>
+      <td>40.7766040</td>
+      <td>-73.9466300</td>
+      <td>{'latitude': '40.776604', 'longitude': '-73.94663'}</td>
+      <td>YORK AVENUE</td>
+      <td></td>
+      <td>EAST 87 STREET</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>4304468</td>
+      <td>2020-03-26</td>
+      <td>13:50:00</td>
+      <td>MANHATTAN</td>
+      <td>10016</td>
+      <td>40.7470800</td>
+      <td>-73.9813500</td>
+      <td>{'latitude': '40.74708', 'longitude': '-73.98135'}</td>
+      <td>EAST 34 STREET</td>
+      <td></td>
+      <td>PARK AVENUE</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>4309935</td>
+      <td>2020-04-22</td>
+      <td>20:59:00</td>
+      <td>MANHATTAN</td>
+      <td>10002</td>
+      <td>40.7180060</td>
+      <td>-73.9866000</td>
+      <td>{'latitude': '40.718006', 'longitude': '-73.9866'}</td>
+      <td>DELANCEY STREET</td>
+      <td></td>
+      <td>SUFFOLK STREET</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>4303924</td>
+      <td>2020-03-23</td>
+      <td>23:31:00</td>
+      <td>MANHATTAN</td>
+      <td>10028</td>
+      <td>40.7739750</td>
+      <td>-73.9485550</td>
+      <td>{'latitude': '40.773975', 'longitude': '-73.948555'}</td>
+      <td>EAST 83 STREET</td>
+      <td></td>
+      <td>YORK AVENUE</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>4302642</td>
+      <td>2020-03-20</td>
+      <td>08:21:00</td>
+      <td>MANHATTAN</td>
+      <td>10017</td>
+      <td>40.7572330</td>
+      <td>-73.9760500</td>
+      <td>{'latitude': '40.757233', 'longitude': '-73.97605'}</td>
+      <td>EAST 49 STREET</td>
+      <td></td>
+      <td>MADISON AVENUE</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>4299350</td>
+      <td>2020-02-29</td>
+      <td>10:27:00</td>
+      <td>MANHATTAN</td>
+      <td>10039</td>
+      <td>40.8329000</td>
+      <td>-73.9354500</td>
+      <td>{'latitude': '40.8329', 'longitude': '-73.93545'}</td>
+      <td></td>
+      <td>159-38    HARLEM RIVER DRIVE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>4301550</td>
+      <td>2020-03-17</td>
+      <td>08:40:00</td>
+      <td>MANHATTAN</td>
+      <td>10011</td>
+      <td>40.7397460</td>
+      <td>-73.9965700</td>
+      <td>{'latitude': '40.739746', 'longitude': '-73.99657'}</td>
+      <td></td>
+      <td>135       WEST 17 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>4301900</td>
+      <td>2020-03-16</td>
+      <td>14:40:00</td>
+      <td>MANHATTAN</td>
+      <td>10016</td>
+      <td>40.7477650</td>
+      <td>-73.9829600</td>
+      <td>{'latitude': '40.747765', 'longitude': '-73.98296'}</td>
+      <td>EAST 34 STREET</td>
+      <td></td>
+      <td>MADISON AVENUE</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>4296979</td>
+      <td>2020-03-03</td>
+      <td>14:20:00</td>
+      <td>MANHATTAN</td>
+      <td>10016</td>
+      <td>40.7447780</td>
+      <td>-73.9758900</td>
+      <td>{'latitude': '40.744778', 'longitude': '-73.97589'}</td>
+      <td>EAST 34 STREET</td>
+      <td></td>
+      <td>2 AVENUE</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>4307717</td>
+      <td>2020-04-06</td>
+      <td>03:00:00</td>
+      <td>MANHATTAN</td>
+      <td>10016</td>
+      <td>40.7470100</td>
+      <td>-73.9771960</td>
+      <td>{'latitude': '40.74701', 'longitude': '-73.977196'}</td>
+      <td>3 AVENUE</td>
+      <td></td>
+      <td>EAST 36 STREET</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>4306878</td>
+      <td>2020-03-02</td>
+      <td>13:05:00</td>
+      <td>MANHATTAN</td>
+      <td>10019</td>
+      <td>40.7642800</td>
+      <td>-73.9730200</td>
+      <td>{'latitude': '40.76428', 'longitude': '-73.97302'}</td>
+      <td>EAST 59 STREET</td>
+      <td></td>
+      <td>5 AVENUE</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>4307799</td>
+      <td>2020-03-28</td>
+      <td>11:10:00</td>
+      <td>MANHATTAN</td>
+      <td>10035</td>
+      <td>0E-7</td>
+      <td>0E-7</td>
+      <td>{'latitude': '0.0', 'longitude': '0.0'}</td>
+      <td>EAST 124 STREET</td>
+      <td></td>
+      <td>MADISON AVENUE</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>4299792</td>
+      <td>2020-03-13</td>
+      <td>10:00:00</td>
+      <td>MANHATTAN</td>
+      <td>10036</td>
+      <td>40.7589800</td>
+      <td>-73.9959500</td>
+      <td>{'latitude': '40.75898', 'longitude': '-73.99595'}</td>
+      <td>WEST 41 STREET</td>
+      <td></td>
+      <td>10 AVENUE</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>4306581</td>
+      <td>2020-03-09</td>
+      <td>13:00:00</td>
+      <td>MANHATTAN</td>
+      <td>10033</td>
+      <td>40.8461530</td>
+      <td>-73.9323350</td>
+      <td>{'latitude': '40.846153', 'longitude': '-73.932335'}</td>
+      <td>AMSTERDAM AVENUE</td>
+      <td></td>
+      <td>WEST 178 STREET</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>4306834</td>
+      <td>2020-03-09</td>
+      <td>16:47:00</td>
+      <td>MANHATTAN</td>
+      <td>10025</td>
+      <td>40.8029300</td>
+      <td>-73.9675900</td>
+      <td>{'latitude': '40.80293', 'longitude': '-73.96759'}</td>
+      <td>WEST 108 STREET</td>
+      <td></td>
+      <td>BROADWAY</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>4301081</td>
+      <td>2020-03-16</td>
+      <td>08:56:00</td>
+      <td>MANHATTAN</td>
+      <td>10018</td>
+      <td>40.7560120</td>
+      <td>-73.9947000</td>
+      <td>{'latitude': '40.756012', 'longitude': '-73.9947'}</td>
+      <td></td>
+      <td>405       WEST 38 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>4302968</td>
+      <td>2020-03-22</td>
+      <td>00:45:00</td>
+      <td>MANHATTAN</td>
+      <td>10036</td>
+      <td>40.7595860</td>
+      <td>-73.9843800</td>
+      <td>{'latitude': '40.759586', 'longitude': '-73.98438'}</td>
+      <td></td>
+      <td>714       7 AVENUE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>4298846</td>
+      <td>2020-03-10</td>
+      <td>12:40:00</td>
+      <td>MANHATTAN</td>
+      <td>10021</td>
+      <td>40.7675320</td>
+      <td>-73.9532550</td>
+      <td>{'latitude': '40.767532', 'longitude': '-73.953255'}</td>
+      <td>EAST 73 STREET</td>
+      <td></td>
+      <td>YORK AVENUE</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>4326790</td>
+      <td>2020-05-02</td>
+      <td>20:08:00</td>
+      <td>MANHATTAN</td>
+      <td>10029</td>
+      <td>40.7971600</td>
+      <td>-73.9460200</td>
+      <td>{'latitude': '40.79716', 'longitude': '-73.94602'}</td>
+      <td></td>
+      <td>65        EAST 112 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>4332853</td>
+      <td>2020-03-10</td>
+      <td>14:10:00</td>
+      <td>MANHATTAN</td>
+      <td>10022</td>
+      <td>40.7580950</td>
+      <td>-73.9723050</td>
+      <td>{'latitude': '40.758095', 'longitude': '-73.972305'}</td>
+      <td></td>
+      <td>116       EAST 52 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>4304129</td>
+      <td>2020-03-24</td>
+      <td>22:43:00</td>
+      <td>MANHATTAN</td>
+      <td>10032</td>
+      <td>40.8331200</td>
+      <td>-73.9426300</td>
+      <td>{'latitude': '40.83312', 'longitude': '-73.94263'}</td>
+      <td></td>
+      <td>509       WEST 157 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>4304465</td>
+      <td>2020-03-27</td>
+      <td>18:00:00</td>
+      <td>MANHATTAN</td>
+      <td>10010</td>
+      <td>40.7357980</td>
+      <td>-73.9761050</td>
+      <td>{'latitude': '40.735798', 'longitude': '-73.976105'}</td>
+      <td></td>
+      <td>510       EAST 23 STREET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>4308771</td>
+      <td>2020-03-20</td>
+      <td>00:00:00</td>
+      <td>MANHATTAN</td>
+      <td>10009</td>
+      <td>40.7266650</td>
+      <td>-73.9830900</td>
+      <td>{'latitude': '40.726665', 'longitude': '-73.98309'}</td>
+      <td>SAINT MARKS PLACE</td>
+      <td></td>
+      <td>AVENUE A</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>4306532</td>
+      <td>2020-03-07</td>
+      <td>14:03:00</td>
+      <td>MANHATTAN</td>
+      <td>10023</td>
+      <td>40.7711520</td>
+      <td>-73.9796600</td>
+      <td>{'latitude': '40.771152', 'longitude': '-73.97966'}</td>
+      <td>WEST 64 STREET</td>
+      <td></td>
+      <td>CENTRAL PARK WEST</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>4300991</td>
+      <td>2020-03-10</td>
+      <td>19:30:00</td>
+      <td>MANHATTAN</td>
+      <td>10010</td>
+      <td>40.7401660</td>
+      <td>-73.9895100</td>
+      <td>{'latitude': '40.740166', 'longitude': '-73.98951'}</td>
+      <td></td>
+      <td>928       BROADWAY</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>4306951</td>
+      <td>2020-03-09</td>
+      <td>19:00:00</td>
+      <td>MANHATTAN</td>
+      <td>10021</td>
+      <td>40.7704300</td>
+      <td>-73.9601200</td>
+      <td>{'latitude': '40.77043', 'longitude': '-73.96012'}</td>
+      <td>3 AVENUE</td>
+      <td></td>
+      <td>EAST 73 STREET</td>
+    </tr>
+  </tbody>
+</table>

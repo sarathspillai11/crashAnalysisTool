@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+.button {
+  background-color: #444444; /* Black */
+  font-size: 14px;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+</style>
+    <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Creditshelf Code Challenge</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: Day - v4.0.1
+  * Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">sarathspillai11@gmail.com</a>
+        <i class="bi bi-phone-fill phone-icon"></i> +91 8754815507
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Motor Vehicle Crash Analysis</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#services">Stage1</a></li>
+          <li><a class="nav-link scrollto" href="#about">Stage2</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Stage3</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Stage4</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+      <h2>The objective of this exercise is to create a small tool that can show the distribution of the crashes of bicycles
+relative to bicycles stations.</h2>
+      <a href="#services" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+
+        <script>
+            function call_counter(url) {
+                $.get(url+'/', function (data) {
+                    alert("Database Refreshed !!!");
+                    window.location.href=window.location.href
+                });
+
+            }
+        </script>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Collision Data</span>
+          <h2>Collision Data</h2>
+          <p>Load or Delete Collision Data</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <input type="submit" value="Load Collision Data" class="button" onclick="call_counter('loadCollisionData');"/>
+              <p>Load Collision Data to the Collision Data Table</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <input type="submit" value="Delete Collision Data" class="button" onclick="call_counter('deleteCollisionData');"/>
+
+              <!--<h4><a href="deleteCollisionData/">Delete Collision Data</a></h4>-->
+              <p>Delete Data from the Collision Data Table</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    <br>
+    <br>
+    <br>
+
+        <!-- ======= About Section ======= -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+            function call_show_func(url) {
+                $.get(url+'/', function (data) {
+                    alert("Database Refreshed !!!");
+                    window.location.href=window.location.href
+                });
+
+            }
+        </script>
+    <!-- ======= Cta Section ======= -->
+    <section id="about" class="cta">
+      <br>
+    <br>
+    <br>
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Show all the Crash locations in the selected borough</h3>
+          <p>This feature will show you all the locations in a particular borough that you have selected, where a bicycle crash has occured.</p>
+          <!--<a class="cta-btn" href="#">Call To Action</a>-->
+          <form action= "{% url 'filterBorough' %}" method="POST">
+                  {% csrf_token %}
+
+                     <select name="dropboroughName" required>
+                  <option selected disabled="true" value="">Select Borough</option>
+                   {% for result in borough %}
+                     {% if result == "None" %}
+                        <option value="" disabled="true">{{ result }}</option>
+                     {% else %}
+                  <option value="{{result}}">{{ result }}</option>
+                     {% endif %}
+                   {% endfor %}
+                </select>
+
+          <input type="submit" value="Show Data" name="showdata" class="button"/>
+          <input type="submit" value="Show Map" name="showmap" class="button"/>
+            </form>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Bike Station Data</span>
+          <h2>Bike Station Data</h2>
+          <p>Load or Delete Bike Station Data</p>
+        </div>
+
+        <!--<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="150">-->
+
+          <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <input type="submit" value="Load Bike Station Data" class="button" onclick="call_counter('loadBikeStationData');"/>
+              <p>Load Data to the Bike Station Table</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <input type="submit" value="Delete Bike Station Data" class="button" onclick="call_counter('deleteStationData');"/>
+
+              <!--<h4><a href="deleteCollisionData/">Delete Collision Data</a></h4>-->
+              <p>Delete Data from the Bike Station Table</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!--</div>-->
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="pricing" class="cta">
+      <div class="container" data-aos="zoom-in">
+       <br>
+        <br>
+        <br>
+        <br>
+        <div class="text-center">
+          <h3>Show Bike Stations and Crash Locations</h3>
+          <p>This map will show you the locations of bike stations relative to the nearest locations where there was a bicycle crash.</p>
+          <a class="cta-btn" href="{% url 'stationCrashMap' %}">Show in Map</a>
+        </div>
+          <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </section><!-- End Cta Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
